@@ -232,8 +232,8 @@ if (attackerFaction == 3) then
 	_attackerMarksmanNVScope = "rhs_acc_1pn93_1";
 	_attackerMarksmanAttachments = [if (nightVision > 0) then {"rhs_acc_1pn93_1"} else {"rhs_acc_pso1m2"}];
 	
-	_attackerLMG = _attackerPrimary;
-	_attackerLMGMagazines = ["rhs_45Rnd_545X39_AK", 6];
+	_attackerLMG = "rhs_weap_rpk74m";
+	_attackerLMGMagazines = ["rhs_45Rnd_545x39_AK", 6];
 	_attackerMG = "rhs_weap_pkp";
 	_attackerMGMagazines = ["rhs_100Rnd_762x54mmR", 3];
 	
@@ -295,8 +295,8 @@ if (defenderFaction == 2) then
 
 	_defenderSpecOpsAttachments = ["rhs_acc_pkas"];
 	
-	_defenderMG = _defenderPrimary;
-	_defenderMGMagazines = ["rhs_45Rnd_545X39_AK", 6 + 2 * defenderGearQuality];
+	_defenderMG = "rhs_weap_rpk74m";
+	_defenderMGMagazines = ["rhs_45Rnd_545x39_AK", 6 + 2 * defenderGearQuality];
 	
 	_defenderGL = "rhs_weap_ak74m_gp25";
 	_defenderGLMagazines = [["rhs_VOG25", 4 + 2 * defenderGearQuality], ["rhs_GRD40_Red", 3]];
