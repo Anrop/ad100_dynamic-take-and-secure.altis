@@ -1,4 +1,4 @@
-private ["_deleteTypes", "_i", "_j", "_changeAttackerSide", "_dUnitArr", "_aUnitArr", "_dUnitCount", "_aUnitCount", "_minX", "_maxX", "_minY", "_maxY", "_vehType", "_vehCount", "_slotCount", "_veh", "_pos", "_aStartDir", "_zoneMarker", "_area", "_posFound", "_driverArray", "_driverArrayCount", "_passengerArray", "_passengerArrayCount", "_endTime", "_group", "_groups", "_groupIndex", "_maxGroupIndex", "_minGroupSize", "_unitsWithoutGroup", "_units", "_vehicleIndex", "_bCont", "_bSpawn", "_spawnMode", "_toDelete", "_crate", "_dx", "_dy", "_jeepType", "_jeepCrewCount"];
+private ["_deleteTypes", "_i", "_j", "_changeAttackerSide", "_dUnitArr", "_aUnitArr", "_dUnitCount", "_aUnitCount", "_minX", "_maxX", "_minY", "_maxY", "_vehType", "_vehCount", "_slotCount", "_veh", "_pos", "_aStartDir", "_zoneMarker", "_area", "_posFound", "_driverArray", "_driverArrayCount", "_passengerArray", "_passengerArrayCount", "_endTime", "_group", "_groups", "_groupIndex", "_maxGroupIndex", "_minGroupSize", "_unitsWithoutGroup", "_units", "_vehicleIndex", "_bCont", "_bSpawn", "_spawnMode", "_toDelete", "_crate", "_dx", "_dy", "_jeepType", "_jeepCrewCount","_heliType","_heliCrewCount","_boatType","_boatCrewCount","_SDVType","_SVDCrewCount"];
 
 fnc_startPos = compile preprocessFileLineNumbers "fnc_startpos.sqf";
 
@@ -32,6 +32,13 @@ _deleteTypes = ["GroundWeaponHolder", "WeaponHolderSimulated", "ACE_Explosive_Ob
 
 _jeepType =  "B_MRAP_01_F";
 _jeepCrewCount = 4;
+_heliType = "B_Heli_Light_01_F";
+_heliCrewCount = 6;
+_boatType = "B_Boat_Transport_01_F";
+_boatCrewCount = 5;
+_SDVType = "B_SDV_01_F";
+_SDVTCrewCount = 4;
+
 if (attackerFaction == 1 || attackerFaction == 2) then 
 {
 	_jeepType = "rhsusf_m1025_d";
@@ -426,20 +433,20 @@ while {true} do
 					// Boat
 					case 1:
 					{
-						_vehType = "B_Boat_Transport_01_F";
-						_slotCount = 5;
+						_vehType = _boatType;
+						_slotCount = _boatCrewCount;
 					};
 					// Submarine
 					case 2:
 					{
-						_vehType = "B_SDV_01_F";
-						_slotCount = 4;
+						_vehType = _SDVType;
+						_slotCount = _SDVCrewCount;
 					};
 					// Littlebird
 					case 3:
 					{
-						_vehType = "B_Heli_Light_01_F";
-						_slotCount = 6;
+						_vehType = _heliType;
+						_slotCount = _heliCrewCount;
 					};
 				};
 			};
