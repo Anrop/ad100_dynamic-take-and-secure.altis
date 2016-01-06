@@ -324,6 +324,12 @@
 		<Key ID="STR_RHS_RU_FLORA">
 			<English>Flora Russian Army by Red Hammer Studios</English>
 		</Key>
+		<Key ID="STR_SFP_WOODLAND">
+			<English>Swedish Forces (Woodland) by SFP</English>
+		</Key>
+		<Key ID="STR_SFP_DESERT">
+			<English>Swedish Forces (Desert) by SFP</English>
+		</Key>
 		<Key ID="STR_DefenderFactionParam">
 			<English>Defender Faction (requires mod)</English>
 		</Key>

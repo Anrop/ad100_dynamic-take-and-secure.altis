@@ -244,6 +244,75 @@ if (attackerFaction == 3) then
 	_attackerSniperUniform = _attackerUniform;
 	_attackerSniperHat = _attackerHat;
 };
+// SWE equipment
+if (attackerFaction == 5 || attackerFaction == 6) then
+{
+	_attackerUniform = "sfp_m90w_uniform_ksk90";
+	_attackerHelm = "sfp_m90w_helmet";
+	_attackerVest = "sfp_kroppsskydd12";
+	_attackerBackpack = "sfp_stridsvast2000";
+	_attackerGlobalBackpack = _attackerBackpack;
+	_attackerHat = "sfp_lg_beret";
+	
+	_attackerGLVest = "sfp_kroppsskydd12_at";
+	_attackerMedicVest = "sfp_kroppsskydd12_medic";
+	_attackerMGVest = "sfp_kroppsskydd12_tl";
+	
+	// Desert
+	if (attackerFaction == 6) then
+	{
+		_attackerUniform = "sfp_m90k_uniform_ksk90";
+		_attackerHelm = "sfp_m90k_helmet";
+		_attackerVest = "sfp_kroppsskydd12";
+		_attackerBackpack = "sfp_stridsvast2000";
+		_attackerGlobalBackpack = _attackerBackpack;
+		_attackerHat = "sfp_lg_beret";
+	
+		_attackerGLVest = "sfp_kroppsskydd12_at";
+		_attackerMedicVest = "sfp_kroppsskydd12_medic";
+		_attackerMGVest = "sfp_kroppsskydd12_tl";
+	};
+	
+	_attackerPrimary = "sfp_ak5c_alt";
+	_attackerMagazine = "sfp_30Rnd_556x45_Stanag";
+	
+	_attackerAttachments = ["sfp_optic_aimpoint", "acc_pointer_IR"];
+	if (nightVision == 0) then
+	{
+		_attackerAttachments set [1, "acc_flashlight"];
+	};
+
+	_attackerSR = "sfp_ag90";
+	_attackerSRMagazine = "sfp_10Rnd_127x99_ag90";
+	_attackerSRScope = "sfp_optic_kikarsikte90b_10x";
+	_attackerSRNVScope = "optic_NVS";
+	_attackerSniperUniform = "sfp_ghillie_uniform";
+	_attackerSniperHat = "";
+
+	//_attackerHAT = "sfp_grg86";
+
+	_attackerGrenade = "sfp_shgr07";
+
+	_attackerHandgun = "sfp_p88";
+	_attackerHandgunMagazine = "sfp_17Rnd_9x19_Mag";
+	_attackerHandgunSuppressor = "muzzle_snds_L";
+
+	_attackerSMG = "sfp_cbj_ms_aimpoint_sd";
+	_attackerSMGAttachments = ["sfp_optic_aimpoint", "sfp_muzzle_snds_cbj"];
+	_attackerSMGMagazine = "sfp_30Rnd_650x25mag";
+
+	_attackerMarksmanPrimary = "sfp_ak5c";
+	_attackerMarksmanScope = "sfp_optic_3x_aimpoint";
+	_attackerMarksmanAttachments = [_attackerMarksmanScope, "acc_pointer_IR"];
+	
+	_attackerGL = "sfp_ak5c_m203";
+	_attackerGLMagazines = [["1Rnd_HE_Grenade_shell", 10], ["1Rnd_SmokeGreen_Grenade_shell", 4], ["UGL_FlareWhite_F", if (nightVision == 0) then {10} else {0}], [_attackerHandgunMagazine, 3]];
+	
+	_attackerLMG = "sfp_ksp90c_aimpoint_dbal2";
+	_attackerLMGMagazines = ["sfp_200Rnd_556x45_ksp90", 5];
+	_attackerMG = "sfp_ksp58b2";
+	_attackerMGMagazines = ["sfp_249Rnd_762x51_ksp58", 4];
+};
 
 if (defenderFaction == 0 || defenderFaction == 1) then
 {

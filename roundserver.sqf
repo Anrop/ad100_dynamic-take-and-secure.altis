@@ -49,6 +49,17 @@ if (attackerFaction == 3) then
 	_jeepCrewCount = 9;
 };
 
+if (attackerFaction == 5 || attackerFaction == 6) then 
+{
+	_jeepType = "sfp_tgb16";
+	_jeepCrewCount = 4;
+	_heliType = "sfp_hkp9_sog";
+	_heliCrewCount = 6;
+	_boatType = "sfp_gruppbat";
+	_boatCrewCount = 5;
+	_SDVType = "B_SDV_01_F";
+	_SDVCrewCount = 4
+};
 if (!isDedicated) then
 {
 	waitUntil {!isNil "objPosHandlerClient"};

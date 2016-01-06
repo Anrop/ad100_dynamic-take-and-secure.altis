@@ -230,8 +230,8 @@ class params
 	class AttackerFactionParam
 	{
 		title = $STR_AttackerFactionParam;
-		values[] = {-1, 0, 1, 2, 3, 4};
-		texts[] = {$STR_Automatic, $STR_IDF, $STR_RHS_US_OCP, $STR_RHS_US_UCP, $STR_RHS_RU_EMR, $STR_VanilaUS};
+		values[] = {-1, 0, 1, 2, 3, 4,5,6};
+		texts[] = {$STR_Automatic, $STR_IDF, $STR_RHS_US_OCP, $STR_RHS_US_UCP, $STR_RHS_RU_EMR, $STR_VanilaUS, $STR_SFP_WOODLAND, $STR_SFP_DESERT};
 		default = -1;
 	};
 	
